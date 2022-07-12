@@ -3,7 +3,7 @@
 
   <groupId>org.dahlen</groupId>
   <artifactId>idnr-validator</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <url>https://github.com/m0wlheld/idnr-validator.git</url>
 
   <name>IdNr-Validator</name>
@@ -150,6 +150,7 @@
   <scm>
     <connection>scm:git:https://github.com/m0wlheld/idnr-validator.git</connection>
     <url>https://github.com/m0wlheld/idnr-validator</url>
+    <tag>v1.0</tag>
   </scm>
 
 </project>
