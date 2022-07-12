@@ -266,6 +266,7 @@ public class IdNrValidator {
                 .codePoints()
                 .map(codePoint -> codePoint - '0')
                 .reduce(IDNR_NUMBER_LENGTH, (product, digit) -> {
+
                     int sum = (digit + product) % IDNR_NUMBER_LENGTH;
                     if (sum == 0) {
                         sum = IDNR_NUMBER_LENGTH;
@@ -275,7 +276,7 @@ public class IdNrValidator {
                     return product;
                 });
 
-        int computedChecksum = IDNR_LENGTH - p;
+        int computedChecksum = (IDNR_LENGTH - p) % 10;
 
         if (computedChecksum != idnrCheckDigit) {
             LOG.warn("IdNrNumber {}, check digit missmatch (given: {}, computed: {})!", idnrNumber, idnrCheckDigit,
