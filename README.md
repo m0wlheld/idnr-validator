@@ -18,7 +18,7 @@ The tax identification number is an eleven-digit number, the 11th digit being a 
 ## Usage
 
 ### Build
-This is a Java 8 project, using Apache Maven build utility. After having cloned this repository, perform the following steps to create a usable artifact (Java archive):
+This is a Java 11 project, using Apache Maven build utility. After having cloned this repository, perform the following steps to create a usable artifact (Java archive):
 
 ```bash
 mvnw clean install
