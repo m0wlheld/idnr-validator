@@ -42,11 +42,11 @@
     <junit.version>5.6.0</junit.version>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
-    <maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
+    <maven-enforcer-plugin.version>3.1.0</maven-enforcer-plugin.version>
     <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
-    <maven-javadoc-plugin.version>3.0.0</maven-javadoc-plugin.version>
-    <maven-site-plugin.version>3.7.1</maven-site-plugin.version>
-    <maven-project-info-reports-plugin.version>3.0.0</maven-project-info-reports-plugin.version>
+    <maven-javadoc-plugin.version>3.3.1</maven-javadoc-plugin.version>
+    <maven-site-plugin.version>3.9.1</maven-site-plugin.version>
+    <maven-project-info-reports-plugin.version>3.3.0</maven-project-info-reports-plugin.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <slf4j.version>1.7.36</slf4j.version>
   </properties>
@@ -91,7 +91,7 @@
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>3.6.3</version>
+                  <version>3.2.5</version>
                 </requireMavenVersion>
               </rules>
               <fail>true</fail>
@@ -121,13 +121,13 @@
         <reportSets>
           <reportSet>
             <reports>
-              <report>team</report>
               <report>index</report>
-              <report>issue-management</report>
-              <report>licenses</report>
-              <report>dependency-info</report>
-              <report>scm</report>
               <report>summary</report>
+              <report>team</report>
+              <report>licenses</report>
+              <report>issue-management</report>
+              <report>scm</report>
+              <report>dependencies</report>
             </reports>
           </reportSet>
         </reportSets>
