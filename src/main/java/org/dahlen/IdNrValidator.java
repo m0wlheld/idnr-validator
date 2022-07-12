@@ -76,21 +76,21 @@ public class IdNrValidator {
         IDNR_LENGTH_MISSMATCH,
         /** Given IdNr is of unexpected content (digits-only, no leading zero) */
         IDNR_FORMAT_MISSMATCH,
-        /** Given IdNr.-Number contains triple digit sequence (like 111...) */
+        /** Given IdNr-number contains triple digit sequence (like 111...) */
         NUMBER_INVALID_3_DIGITS_SEQUENCE,
-        /** Given IdNr.-Number contains same digit more than 3 times (like 1111... */
+        /** Given IdNr-number contains same digit more than 3 times (like 1111... */
         NUMBER_TO_MANY_OCCURENCES_OF_SAME_DIGIT,
         /**
-         * Given IdNr.-Number contains more than one triple of same digit (like
+         * Given IdNr-number contains more than one triple of same digit (like
          * 111222...)
          */
         NUMBER_TO_MANY_TRIPLE_OCCURENCES,
         /**
-         * Given IdNr.-Number contains more than one double of same digit (like 1122...)
+         * Given IdNr-number contains more than one double of same digit (like 1122...)
          */
         NUMBER_TO_MANY_DOUBLE_OCCURENCES, 
         /**
-         * Given IdNr.-Number does not contain double or triple occurence of same digit
+         * Given IdNr-number does not contain double or triple occurence of same digit
          */
         NUMBER_NO_OCCURENCES_OF_SAME_DIGIT;
 
