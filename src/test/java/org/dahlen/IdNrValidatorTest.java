@@ -12,8 +12,7 @@ public class IdNrValidatorTest {
             "47036892816",
             "65929970489",
             "57549285017",
-            "25768131411",
-            "12345678903"
+            "25768131411"
     };
 
     public static final String[] INVALID_IDNR = {
