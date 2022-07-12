@@ -88,7 +88,11 @@ public class IdNrValidator {
         /**
          * Given IdNr.-Number contains more than one double of same digit (like 1122...)
          */
-        NUMBER_TO_MANY_DOUBLE_OCCURENCES;
+        NUMBER_TO_MANY_DOUBLE_OCCURENCES, 
+        /**
+         * Given IdNr.-Number does not contain double or triple occurence of same digit
+         */
+        NUMBER_NO_OCCURENCES_OF_SAME_DIGIT;
 
     };
 
@@ -238,7 +242,8 @@ public class IdNrValidator {
                 }
                 break;
             case 10:
-                // no double or triple, all digits present, that's okay
+                // no double or triple, not okay
+                errors.add(ValidationError.NUMBER_NO_OCCURENCES_OF_SAME_DIGIT);
                 break;
             default:
                 // too many occurences (3+) of same digit
